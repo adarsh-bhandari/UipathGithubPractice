@@ -1,0 +1,174 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="BrowserActivities" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="723,1948" sap2010:WorkflowViewState.IdRef="BrowserActivities_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="76">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.Platform.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers.Scope</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="32">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="BrowserActivities" sap:VirtualizedContainerService.HintSize="552,1883" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="Companies" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:BuildDataTable DataTable="[Companies]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="510,59" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Company&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;Company&gt;Reliance&lt;/Company&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;Company&gt;Idea&lt;/Company&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;Company&gt;Infosys&lt;/Company&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: New Tab" sap:VirtualizedContainerService.HintSize="510,1692" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="aac54c40-9b2e-4bcf-b92b-0cc899549898" Version="V1" WindowResize="Maximize">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="476,1476" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="CurrentPrice" />
+              <Variable x:TypeArguments="x:String" Name="MarketCap" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[Companies]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="434,1262" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+              <ui:ForEachRow.Body>
+                <ActivityAction x:TypeArguments="sd:DataRow">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="376,1141" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DelayBetweenKeys="1" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,216" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="aac54c40-9b2e-4bcf-b92b-0cc899549898" Text="[CurrentRow(&quot;Company&quot;).ToString]" Version="V1">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.screener.in/" DesignTimeRectangle="374, 439, 618, 57" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl tag='INPUT' aria-label='Search for a company' idx='3' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' aria-label='Search for a company' type='search' aaname='' /&gt;" Guid="f3e6e500-dc5d-49ef-9ae8-5d03ecd71a21" ImageBase64="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" InformativeScreenshot="a86b4efe567046b8c1db0192f5a669d0.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Stock Screener and fundamental analysis tool for Indian stocks - Screener' /&gt;" SearchSteps="Selector" />
+                      </uix:NTypeInto.Target>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NTypeInto>
+                    <uix:NKeyboardShortcuts DelayBetweenShortcuts="{x:Null}" ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="334,178" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V1" />
+                    <uix:NGetText DisplayName="Get Text 'CurrentPrice'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="aac54c40-9b2e-4bcf-b92b-0cc899549898" Version="V1">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.screener.in/company/RELIANCE/consolidated/" DesignTimeRectangle="541, 375, 41, 19" ElementType="Text" FriendlyName="'2,660'" FullSelectorArgument="&lt;webctrl aaname='          Current Price        ' parentid='top-ratios' tag='SPAN' /&gt;&lt;nav up='1' /&gt;&lt;webctrl parentid='top-ratios' tag='SPAN' class='number' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='top-ratios' tag='SPAN' type='' /&gt;" Guid="92abc3cf-173c-4fb0-8f43-8d2741fe62cf" ImageBase64="" InformativeScreenshot="2d17098fddf7a1d9020e40eeba5d1553.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Reliance Industries Ltd financial results and price chart - Screener' /&gt;" SearchSteps="Selector" />
+                      </uix:NGetText.Target>
+                      <uix:NGetText.Text>
+                        <OutArgument x:TypeArguments="x:String">[CurrentPrice]</OutArgument>
+                      </uix:NGetText.Text>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NGetText>
+                    <uix:NGetText DisplayName="Get Text 'MarketCap'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="aac54c40-9b2e-4bcf-b92b-0cc899549898" Version="V1">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.screener.in/company/RELIANCE/consolidated/" DesignTimeRectangle="236, 383, 70, 19" ElementType="Text" FriendlyName="'1,799,464'" FullSelectorArgument="&lt;webctrl parentid='top-ratios' tag='SPAN' /&gt;&lt;nav up='1' /&gt;&lt;webctrl parentid='top-ratios' tag='SPAN' class='number' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='top-ratios' tag='SPAN' type='' /&gt;" Guid="b401d8ac-65ff-4a70-a70f-a069a15ec94b" ImageBase64="" InformativeScreenshot="7924c142f717a2980b48d4d6ed993f9d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Reliance Industries Ltd financial results and price chart - Screener' /&gt;" SearchSteps="Selector" />
+                      </uix:NGetText.Target>
+                      <uix:NGetText.Text>
+                        <OutArgument x:TypeArguments="x:String">[MarketCap]</OutArgument>
+                      </uix:NGetText.Text>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NGetText>
+                    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334,61" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[CurrentRow(&quot;Company&quot;).ToString +&quot; - Current Price : &quot; + CurrentPrice + &quot;, Market Cap : &quot; + MarketCap]" />
+                    <uix:NNavigateBrowser DisplayName="Navigate Browser - Go Back" sap:VirtualizedContainerService.HintSize="334,81" sap2010:WorkflowViewState.IdRef="NNavigateBrowser_2" Version="V1" />
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEachRow.Body>
+            </ui:ForEachRow>
+            <uix:NNavigateBrowser Action="CloseTab" DisplayName="Navigate Browser - Close Tab" sap:VirtualizedContainerService.HintSize="434,81" sap2010:WorkflowViewState.IdRef="NNavigateBrowser_1" Version="V1" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1382, 744" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAXpSURBVFhH1ZZvVFNlHMdvvvJlKoiYpmm9qHd1ynMGg93BgE02/rPJAJkYZacXmXVK046cOscwQ8FMqyVjgJZGLTXziHlESZDBIFOTjbGNbTQHnQyGHhPw1/PcPZc9u2xi9qZ+53zOHZd7n8/3+T33uRvzvymorJzjLJCzriLVXpda2ebSZNpdGlXAoVYGXIWKfvS/C4hap0oqwdeS2/59OXXsXHdJzrsubdbwQG4aTJMjC5KdwmHPkoJdFcRZkOFHobbie8kwD1euYpUWzdg7kJ8BHHnpQWaESA0LYFeyCAk48tI8zmxWQ4Z78AKAR1wludUO9WpwFCgQ8lAAYReQfEYXSAB7ZjJCgu5L24nHJMPfv/CFA0U5Jk5eiOWKoDxaB2YLsDqIIzvt6wcK8YtavrsPDc7JSYCwDtABsJwKESYXBOhXiMGZK6simshVv0GVfwndeDVXBrb89HB51CWgZh9xCUIBMI5McSHRhddyg25uVk3Z0Gm5GLrRANez0MBIGDXA9MzJAyiU0x1QJAUDyBNhQCVxR9wdTx15ZdvKQy/BpleV0KZIhstoQCvqhFBsRzi3bwbvsWYY7rUEblg7A15z82178xs3r9eIblg/Fvms+0Q++75E3+CBhCGPXuT16kUef53YM2JMdP/RkOAeMYq3E22wKqFyzpNfbhhecagCVu0vg0ZFAnSi1NdQF+xYTujXqcF37gyMjo6C1T0GpyxB8Gd8bsTWAl6TEoaaE8BnSoSb34vh1plkuHMuGSbPI9oQF5Ng6qLUD8hJ9Kj9hyskTzRVAI9ucy6cTE8EC9pCfXgp8MzXqeGm1wP93lF4sykAqo/Gp1HuGodNDQGweUbhz989MN6WD/faU2CqIwXuXUoBMKcCdKGjBR050OduVkz0DLPyq5drljWuh+VNL3I8bVgPNXkS+DFDBJdVLNjQevtbz0I/EqhrQ2I6QCYir2acCzHmPYsk6QA9mDSCLAgf4OeMaqJnmBWHKy7gADSqHRo4LhNBW4YYbNvf4lqMZ55VHS7HYszqD4O8jjqBr71zbYsgAAmB5Zhe2TmiZ5jHG8v7hQEw28rT4bRsFbiPf8OtMy3Gs+ZnTgdQ7ByHPnTt+OC34fLp9pMO9KRaiZ5hljWtD0QKkFhbDCbZC+Azd3AP22xyPsDJrjEYG2oPD0C3nwuQEiB61AEUAHUBaJY2rOOo2JQJQ53tcKp77L5iHnnEAIL155COET3DLG0qt/HCJeTI84y+DK6cCC7BbDPH4AB9g2gJXKbwANNiQk9KaAmWNpafx2IaOtD7De9xDxbearSUFvPyjUbyEP66lZo1PXOMFP2PDT2EqAN7HjPqICr1ZVMdzis+vMXy9oQH4ENgec5utA3do3DdYRmGngxBgLD2w5SF3UX0DBNfX5YslC42lnHwn587uhEGR37j9jneavSs+ZljufOGF4bMpZPRxEFY9B6QhV5E+FW82KjzxyMRDx+APvfskdfghK2DazHeavhhw+A1x+eOXf0Jak9UoJmjdZ8h5wOwMNUteBXjijfq3sGSRfVrOWgxfz6uvhRQt6C0pRqMV85Aq7OXo+FyC5SYqmDJXg3cNsuRRCjm5XwA9m2iDRX+Oo43rvXwAbAMI/ybZyEh1lACCw9oIXbvGjD9kE2te6QASN7FusGpi/xjNba+RC0U0YRJyTHGUAwxn2jg+c80MNmjEEhDYp7JLraA6CLXorq1VbyIBstoMc8CvRZi9mugt1WJBMJ1D7UdM2GW7iCa6IV/OMbVaY/SEhpuxoQFdQh9EWgb0devRfiy4eXBAHfN0iP/6JdxnKH0g9i6cCENJ0fM/1QD/na69bRYCve60cy7pTseWE7XfIO2MPag1s3LOGGddpp5B4ug6lguEvFtp+Vo1p0S96xrPlvh3bHgi+ItMXqtH0vpEHF6DdzqUkyEi6Uw0Snx/3WJ3Rz1aX+Ywi+refo1STEGbXXMwaLWRz/XWL9ryfbc7WQDaH2td81sK2p19YQlNWnGS+a/WwzzN8pWpGcXa7w4AAAAAElFTkSuQmCC" InformativeScreenshot="f27fc68270bf0c28031be937c36462ef.png" Selector="&lt;html app='chrome.exe' url='https://www.screener.in/' /&gt;" Url="https://www.screener.in/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
