@@ -1,0 +1,12 @@
+﻿{
+  "Id": "xMX299-xfUKun3jrzeSbyA",
+  "Reference": "OO3qleHviEay9fxJ-jvahA/xMX299-xfUKun3jrzeSbyA",
+  "ParentRef": "OO3qleHviEay9fxJ-jvahA/Lt4Kn5l1PEOmqICpSRG10Q",
+  "Name": "1",
+  "Type": "AppVersion",
+  "Created": "2022-04-05T08:01:51.3042191Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=21.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2022-04-05T08:01:51.3042191Z"
+}

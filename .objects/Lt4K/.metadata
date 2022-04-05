@@ -1,0 +1,11 @@
+﻿{
+  "Id": "Lt4Kn5l1PEOmqICpSRG10Q",
+  "Reference": "OO3qleHviEay9fxJ-jvahA/Lt4Kn5l1PEOmqICpSRG10Q",
+  "Name": "WindowsCalculatorApp",
+  "Type": "App",
+  "Created": "2022-04-05T08:01:51.1181745Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=21.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2022-04-05T08:01:51.1181745Z"
+}
