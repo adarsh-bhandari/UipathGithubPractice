@@ -3,6 +3,7 @@
   "description": "Practicing publishing of a package",
   "main": "Main.xaml",
   "dependencies": {
+    "UiPath.Database.Activities": "[1.5.0]",
     "UiPath.Excel.Activities": "[2.11.4]",
     "UiPath.Mail.Activities": "[1.12.3]",
     "UiPath.System.Activities": "[21.10.4]",
@@ -12,7 +13,7 @@
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "21.10.5.0",
-  "projectVersion": "1.0.5",
+  "projectVersion": "1.0.6",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
